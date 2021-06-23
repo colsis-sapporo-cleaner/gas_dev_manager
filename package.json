@@ -1,0 +1,22 @@
+{
+  "name": "gas_domainchecker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-typescript": "^7.13.0",
+    "@google/clasp": "^2.3.0",
+    "@types/google-apps-script": "^1.0.31",
+    "babel-loader": "^8.2.2",
+    "gas-webpack-plugin": "^2.0.1",
+    "typescript": "^4.2.4",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "deploy": "yarn build && clasp push",
+    "lint": "eslint --fix --ext .ts,.js --ignore-path .gitignore ."
+  }
+}
